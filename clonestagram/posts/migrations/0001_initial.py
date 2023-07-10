@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
             name='PostPhoto',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('image', models.ImageField(upload_to='photos')),
+                ('image', models.ImageField(upload_to='static/photos')),
                 ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='photos', to='posts.post')),
             ],
         ),
